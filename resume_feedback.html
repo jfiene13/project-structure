@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!-- FYI ... so I could better examine the code, I re-spaced it.
+     No actual code or content has been changed; just spacing.
+-->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Joe Fiene's Resume</title>
+  </head>
+
+  <body>
+    <!-- A lot going on right here with your name.
+
+         First, you want to contain your name, contact information in
+         a header tag.
+
+         'h#'' tags are headers, so there is a kind of emphasis 
+         already associated with them - - they indicate the start of 
+         a section of text. So including 'strong' is redundant.
+    -->
+
+  	<a id="top"><h1><strong>Joe Fiene</strong></h1></a>
+    
+    <!-- This not the way you want to use blockquote. It is
+         a tag reserved for, well, quotes. It seems you used this
+         for more of a visual purpose than to exhibit semantics.
+
+         A 'p' would be just fine here.
+
+         For the link to your email, nice work figuring that out.
+         However, this is a way spammers harvest addresses. If you
+         prefer, I've been allowing students to encode their
+         address: http://hivelogic.com/enkoder/.
+
+         Also, use of targets is something to think about. In
+         this case, you may not need it since a 'mailto:' usually
+         opens an email application. (Although it may, on some
+         computers - - a Chromebook? - - open a web-based interface.
+         Something for /me/ to think about.)
+
+         But when linking offsite - - you can do it, but it tends to 
+         indicate distrust in the user. Will they come back? Most 
+         sites, when linking off site, do not have a new window/tab 
+         open. Of course, this is a largely theoretical debate, but 
+         worth noting for you to consider.
+    -->
+
+  	<blockquote>
+  	(305)&nbsp;965-4088<br/><a href="mailto:joefiene@mypfbank.com" target ="_top"> <em>joefiene@mypfbank.com</em> </a>
+    </blockquote>
+  	
+    <!-- use of 'hr' is fine, but remember you can control this 
+         using CSS in the future
+    -->
+
+  	<hr>
+
+    <!-- Displaying the navigation as you did is fine, although it
+         could be improved with an unordered list as was displayed
+         in class - - it will make it easier to style in the future.
+
+         Also, the values for each anchor are fine, but these also
+         show up in a url bar when they are clicked:
+
+         resume.html#skills
+
+         That's kind of an added bonus for user interface and 
+         experience. So, no, it's not wrong that you went with short
+         values, but you could also benefit from having longer
+         values, too! (If you decide to make a change, be sure to
+         make the changes in your anchors, too.)
+    -->
+
+  	<nav>  
+      <a href="#edu">Education</a> | 
+      <a href="#skills">Skills</a> | 
+      <a href="#exp">Experience</a> | 
+      <a href="#aff">Affiliations</a> | 
+      <a href="#ref">References</a>  
+    </nav>
+
+  	<hr>
+
+    <!-- div tags work, but in the case of this assignment I was 
+         looking for use of HTML5 structural tags such as section.
+    -->
+
+  	<div>
+
+      <!-- The 'ins' tag is reserved for noting whether text has been 
+           inserted into a document. (It's counterpart is the 'del' 
+           tag.) The use of ins here doesn't really apply. The use of
+           h3 is enough.
+
+           For education, I kind of expected to see more of a list of
+           your degree, minor, for instance:
+
+           <h4>B.A. Computer Science</h4>
+           <ul>
+             <li><strong>University of Miami</strong>, 201X?</li>
+             <li><em>Minor in Religious Studies</em></li>
+           </ul>
+
+           What you have here is more of a summary, and that's okay
+           except I'd expect it under a header of 'Summary' or 'About'
+           as opposed to say, 'Education.'
+
+           Within a paragraph, it is not a good idea to break up the
+           text. You want to let it flow as it would normally be
+           rendered so when you apply styles the text adjusts within
+           the area specified.
+
+           I grasp what you're trying to do here - - keep the text
+           from running across a big page, but that's something to
+           worry about with styling.
+
+           Where you indicate CBTO, that's a great opportunity to
+           use the 'abbr' tag, even though you describe it. Remember,
+           you are focusing on adding information about the content
+           of your page.
+      -->
+
+  		<a id="edu"><h3><ins>Education</ins></h3></a> 
+  		<p>Currently finishing a B.A. in Computer Science from the University of Miami in Coral Gables, Florida.
+  		<br/>Additionally have a minor in Religious Studies allowing for familiarity with many different spiritual <br/>and religious backgrounds.
+  		I am also a CBTO, Certified Bank Technology Officer, for the past three<br/> years with continuing education in the technology field in relation to banking and security.</p>
+  	</div>
+
+  	<div> 
+  		<a id="skills"><h3><ins>Skills</ins></h3></a>
+  		<ul>
+  		   <li> HTML and CSS Styling </li>
+  		   <li> Java Programming </li>
+  		   <li> Basic UNIX Programming for Systems </li>
+  		   <li> Banking Core Vendor Negotiation </li>
+  		   <li> IT Consulting </li>
+  		   <li> Basic Banking Services</li>
+  		</ul>
+  	</div>
+
+  	<div> 
+  		<a id="exp"><h3><ins>Experience</ins></h3></a>
+  		<ul>
+  			<li> <strong>Intern</strong> : Andrews Institute Orthopedic Surgery [<em>January 2011</em>] </li>
+  			<li> <strong>Intern</strong> : Country Club Bank Teller [<em>Summer 2009</em>]</li>
+  			<li> <strong>Intern</strong> : Union Bank Credit Analyst [<em>Summer 2010</em>] </li>
+  			<li> <strong><abbr title="Certified Community Bank Technology Officer">CBTO</abbr></strong>: Preferred Bank [<em>March 2011 - Present</em>]</li>
+  			<li> <strong>Consultant</strong>: Whistleblower and Tampa Healthcare Lawfirm, <br/>Concierge Anesthesia Associates, Naturally Boulder Beverages.</li>
+
+      <!-- the validator expected a '/ul' tag here and that, I think is 
+           what caused the error. 
+
+           Good use of 'abbr' - - exactly what I was talking about 
+           before. I don't believe it can hurt to have that in there
+           multiple times. On a long, long document, maybe one-and-done
+           is good, though.
+      -->
+ 	
+  	</div>
+  	<div> 
+  		<a id ="aff"><h3><ins>Affiliations</ins></h3></a>
+  		<ul>
+  			<li> Alumni Phi Kappa Psi Fraternity</li>
+  			<li> Golden Key Honor Society </li>
+  			<li> National Society Collegiate Scholars </li>
+  			<li> Volunteer Webmaster/Consultant DePauw University<br/> annual suicide prevention charity race. </li>
+
+        <!-- Maybe a link to the web site? Does the race have a name? -->
+
+  		</ul>
+  	</div>
+  	<div> 
+  		<a id="ref"><h3><ins>References</h3></ins></a>
+
+      <!-- This is another area the validator did not like. Remember, 
+           tags must be properly nested, for example:
+
+           <strong><span>Text</span></strong>
+
+           NOT:
+
+           <strong><span>Text</strong></span>
+      -->
+
+  		<ul>
+    		<li><a href ="http://www.theandrewsinstitute.com">Andrews Institute Orthopedic</a></li>
+    		<li> <a href ="https://www.countryclubbank.com">Country Club Bank</a></li>
+  	  	<li><a href ="https://www.unionbank.com">Union Bank</a> </li>
+  		  <li><a href ="http://www.mypfbank.com">Preferred Bank</a></li>
+  		  <li><a href="http://www.begreattoday5k.org">DePauw Charity Fund</a> </li>
+  		  <li><a href="http://www.813whistle.com">WhistleBlower Lawfirm</a> </li>
+  		  <li>For more information please request a specific reference <br/> or see my business card below.</li>
+  		</ul>
+
+      <!-- Something above, more to just eliminate potential issues...
+           keep the = snug against that href. It didn't break the
+           links when I checked, and the validator did not see
+           and issue either, but when working with scripting, that
+           may be picky. 
+
+           I understand why you added the non-breaking spaces, but 
+           remember, styling will handle this down the line. On the
+           plus side, you encoded them properly! On the down side
+           you can eliminate them. 
+
+           Another suggestion: for the file name and alt text, 
+           perhaps you can be a little more descriptive with that. 
+           For instance: "joe_fiene_business_card.png" and "Joe 
+           Fiene's Business Card". 
+
+           In the case of the filename, it is never bad to add
+           context in case someone comes across the file accidentally
+           without it being attached to the web page.
+
+      -->
+
+  		&nbsp;&nbsp;&nbsp;<img src="img/card.png" alt="Business Card"/>
+  		<p><a href="#top">Return to the Top</a>
+
+      <!-- nice idea here; resumes can get long, so always good to 
+           provide means for someone to get back to the beginning
+           easily. But... you forgot the closing 'p'!
+      -->
+
+  	</div>
+
+  	<hr>
+
+    <!-- Use of 'address' is good, but thumbs down on blockquote.
+
+         Curious as to why the address is not higher. My first
+         thought is that many early web pages done by CS people
+         placed addresses at the bottom. But in the case of a resume
+         this is some important information.
+
+         Using 'br' is acceptable here! :)
+
+         If you opt to keep it here, remember to enclose it in
+         a section element. Or, better yet, you could even use
+         a footer element.
+    -->
+
+  	<h5>Current Mailing Address: </h5>
+  	<blockquote><address>Red Road Commons<br/>6630 SW 57th Ave<br/>
+  		Unit # B 215
+  		<br/>South Miami, FL 33143</address></blockquote>
+
+  </body>
+</html>
